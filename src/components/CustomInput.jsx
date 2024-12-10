@@ -5,7 +5,7 @@ export default function CustomInput({ label, invalid, ...props }) {
   if (invalid) {
     labelClass += ' text-red-500';
   }
-
+  //   labelClass에 조건에 따라 클래스를 추가해준다. 이런 부분은 스타일컴포넌트나 css-in-js를 사용하면 더 편하게 할 수 있는 거 같음
   return (
     <p>
       <label className={labelClass}>{label}</label>
@@ -16,3 +16,4 @@ export default function CustomInput({ label, invalid, ...props }) {
     </p>
   );
 }
+// label도 인풋과 동시에 전달해서 프롭으로 받아서 출력 가능!
